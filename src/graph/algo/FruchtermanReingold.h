@@ -30,8 +30,8 @@ class FruchtermanReingold {
     std::vector<Point2D> get_positions() const noexcept;
 
    private:
-    const Graph& g_;
-    const double k_;
+    const Graph& g_;  // [comment] Нет единообразия - во всех остальных случаях приватные 
+    const double k_; // [comment] переменные не заканчиваются символом "_"
     double temp_;
     const size_t width_;
     const size_t height_;

@@ -1,8 +1,8 @@
 #ifndef DIGITSDRAWER_H
 #define DIGITSDRAWER_H
 
-#include <cstring>
-#include <stdexcept>
+#include <cstring> // [comment] Неуверен, насколько корректно так резко переходить на c-шные строки
+#include <stdexcept> // [comment] когда во всей проге они c++-шные
 #include <string>
 
 /* Class for drawing single digits. Uses functors for drawing pixels,
@@ -56,7 +56,7 @@ class DigitsDrawer {
 
     template <typename T_draw_pixel>
     static void draw_zero(size_t x, size_t y, T_draw_pixel draw_pixel) noexcept {
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 6; i++) { // [??comment] хардкод размеров
             draw_pixel(x, y + i);
             draw_pixel(x + 10, y + i);
         }

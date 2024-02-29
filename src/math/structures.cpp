@@ -69,7 +69,8 @@ Vector2D& Vector2D::operator/=(double scalar) noexcept {
 
 double Vector2D::size() const noexcept {
     return std::sqrt(x * x + y * y);
-}
+} // [??comment] Не совсем уверен по поводу названия метода. Обычно size ассоциируется
+ // с другой характеристикой но хзхзхзхз
 
 Point2D operator+(const Point2D& l, const Vector2D& s) noexcept {
     return Point2D(l.x + s.x, l.y + s.y);

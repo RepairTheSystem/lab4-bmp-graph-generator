@@ -112,8 +112,8 @@ int main(int argc, char* argv[]) {
     if (log) {
         f.run(iter, [iter](int i) {
             if (i + 1 == iter || i % 10 == 0) {
-                std::cout << "Выполнено " << i + 1 << " итераций из " << iter << std::endl;
-            }
+                std::cout << "Выполнено " << i + 1 << " итераций из " << iter << std::endl; 
+            } // [comment] Часть выводов на англе, часть на русском
         });
     } else {
         f.run(iter);

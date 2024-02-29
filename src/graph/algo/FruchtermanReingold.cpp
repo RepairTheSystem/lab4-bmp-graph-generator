@@ -89,6 +89,7 @@ void FruchtermanReingold::run_iter() noexcept {
     }
 
     // cooling down the temperature
+    // [comment] Было бы круто сделать возможность кастомизировать стратегию понижения температуры :)
     temp_ *= 0.99;
     if (temp_ < 0.001) {
         temp_ = 0.001;

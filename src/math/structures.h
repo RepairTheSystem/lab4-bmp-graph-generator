@@ -27,7 +27,7 @@ Vector2D operator-(const Vector2D& l, const Vector2D& r) noexcept;
 
 Vector2D operator*(const Vector2D& l, double scalar) noexcept;
 
-Vector2D operator*(double scalar, const Vector2D& r) noexcept;
+Vector2D operator*(double scalar, const Vector2D& r) noexcept; // [comment] ентер
 Vector2D operator/(const Vector2D& l, double scalar) noexcept;
 
 struct Point2D {
